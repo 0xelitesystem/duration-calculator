@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -246,6 +246,31 @@ noscript p { color: var(--error); margin-bottom: 1rem; }
   header, .card, footer { animation: none; }
   .tabs button, .mini, .seg label { transition: none; }
 }
+</style>
+<style>
+/* elitesystem brand tokens: chrome only, meaning preserved */
+:root, :root[data-theme="dark"] {
+  --accent: #d4ff3a;
+  --accent-soft: rgba(212,255,58,0.12);
+  --bg: #0a0a0a;
+  --error: #ff6450;
+  --grid-line: #1f1f1d;
+  --ink: #e8e8e3;
+  --muted: #6e6e68;
+  --surface: #111110;
+}
+:root[data-theme="light"] {
+  --accent: #2d6b00;
+  --accent-soft: rgba(45,107,0,0.08);
+  --bg: #e8ebef;
+  --error: #b8341a;
+  --grid-line: #c8cdd5;
+  --ink: #0a0a0a;
+  --muted: #6e6e68;
+  --surface: #dee2e8;
+}
+:root { color-scheme: dark; }
+:root[data-theme="light"] { color-scheme: light; }
 </style>
 </head>
 <body>
